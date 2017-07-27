@@ -1,8 +1,7 @@
 var express = require('express');
 var app = express();
-app.set("view engine","jade");
 app.use(express.static("Public"));
 app.get("/", function(req,res){
-	res.render("index");
+	res.send("Hola Cristian (Y)");
 });
-app.listen(80);
+app.listen(3001);
