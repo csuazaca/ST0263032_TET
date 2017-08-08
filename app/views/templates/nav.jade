@@ -14,15 +14,15 @@ nav(class="panel" class="navbar navbar-default")
       ul(class="nav navbar-nav navbar-right")
         if !isAuthenticated
           li
-            a(href="http://10.131.137.177:3001/us/signup")= 'Registrarse'
+            a(href="/us/signup")= 'Registrarse'
           li
-            a(href="http://10.131.137.177:3001/us/signin")= 'Iniciar Sesion'
+            a(href="/us/signin")= 'Iniciar Sesion'
         if isAuthenticated
           li(class="dropdown")
             a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false")= user.nombre
               span(class="caret")
             ul(class="dropdown-menu")
               li
-                a(href="http://10.131.137.177:3001/us/perfil")= 'Perfil'
+                a(href="/us/perfil")= 'Perfil'
               li
-                a(href="http://10.131.137.177:3001/us/logout")= 'Cerrar Sesion'
+                a(href="/us/logout")= 'Cerrar Sesion'
