@@ -1,0 +1,29 @@
+extends ../templates/default
+
+block content
+
+  p= 'Bienvenido a tu perfil ' + user.nombre
+
+  div(class='row')
+    div(class='col-md-6 col-md-offset-3' class='panel panel-heading')
+      div(class='panel panel-info')
+        div(class='panel-heading')= 'Carga tu imagen'
+        div(class='panel-body')
+          form(action='http://localhost:3001/us/perfil' method='post')
+            div(class='form-group')
+              label(for="ejemplo_archivo_1")= 'Adjuntar un archivo'
+              input(type="file" name='username' id="ejemplo_archivo_1" class='form-control')
+            div(class='form-group')
+              label(for="titulo")= 'Titulo'
+              input(type='text' name='titulo' id='titulo' placeholder='Titulo' class='form-control')
+            div(class='form-group')
+              label(for="descripcion")= 'Descripcion'
+              input(type='text' name='descripcion' id='descripcion' placeholder='Descripcion' class='form-control')
+            div(class='form-group')
+            button(type="subir" class='btn btn-info' class='col-md-3 col-md-offset-9')= 'Cargar Imagen'
+            
+
+            
+
+
+

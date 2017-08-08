@@ -1,0 +1,6 @@
+extends templates/default
+
+block content
+  h1= 'Proyecto01 Topicos Especiales en Telematica'
+  if isAuthenticated 
+    p= 'Bienvenido ' + user.nombre

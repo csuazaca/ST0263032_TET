@@ -1,0 +1,20 @@
+extends ../templates/default
+
+block content
+  div(class='row')
+    div(class='col-md-6 col-md-offset-3' class='panel panel-heading')
+      div(class='panel panel-info')
+        div(class='panel-heading')= 'Registrate'
+        div(class='panel-body')
+          form(action='http://localhost:3001/us/signup' method='post')
+            div(class='form-group')
+              label(for="email")= 'E-mail'
+              input(type='email' name='email' id='email' placeholder='E-mail' class='form-control')
+            div(class='form-group')
+              label(for="nombre")= 'Nombres y Apellidos'
+              input(type='text' name='nombre' id='nombre' placeholder='Nombre' class='form-control')
+            div(class='form-group')
+              label(for="password")= 'Password'
+              input(type='password' name='password' id='password' placeholder='Password' class='form-control')
+            div(class='form-group')
+            button(type="enviar" class='btn btn-info' class='col-md-2 col-md-offset-10')= 'Enviar'
