@@ -14,7 +14,7 @@ var index = require('./routes/routes');
 
 var app = express();
 
-mongoose.connect('mongodb://localhost/proyecto01');
+mongoose.connect('mongodb://root:root@ds033086.mlab.com:33086/proyecto01');
 var db = mongoose.connection;
 
 //MiddleWare
